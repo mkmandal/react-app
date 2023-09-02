@@ -14,6 +14,7 @@ let Body = ()=>{
     return (
     <div className="body">
     <SearchBar/>
+     <div className="filter-btn"> <button className="button btn" onClick={()=>{console.log("button click !!")}}>Filter Restarent</button></div>
      <div className="rest-container">
      {RestaurantData.map(data=>{
          return  <Restaurent key={data.data.id} restData={data} />
