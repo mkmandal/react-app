@@ -61,3 +61,104 @@
 .cusines{
     line-break: anywhere;
 }
+
+.top-section{
+    display: flex;
+    
+}
+
+.filter-btn{
+    margin: 10px;
+    
+}
+.btn-primary{
+    cursor: pointer;
+}
+
+
+.login{
+
+    cursor: pointer;
+    background-color: aliceblue;
+    font-size: 18px;
+
+}
+
+.login:hover{
+    border: solid white 3px;
+    background-color: rgb(53, 53, 218);
+    color: white;
+    font-size: 20px;
+}
+
+.card {
+    width: 300px;
+    margin: 5px auto;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 10px;
+  }
+  
+  @keyframes placeholderShimmer {
+    0% {
+      background-position: -468px 0;
+    }
+    100% {
+      background-position: 468px 0;
+    }
+  }
+  .shimmer-animation {
+    background-color: #dee8f1;
+    background-image: linear-gradient(to right, #dee9f3 0%, #d9dff0 20%, #f6f7f8 40%, #f6f7f8 100%);
+    background-repeat: no-repeat;
+    background-size: 800px 104px;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: placeholderShimmer;
+    animation-timing-function: linear;
+  }
+  
+  .loader-shimmer-banner {
+    height: 16rem;
+    background-size: 800px 18rem;
+    border-radius: 5px;
+    margin-bottom: 12px;
+  }
+  .loader-shimmer-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+  .loader-shimmer-title {
+    height: 25px;
+    flex: 0 0 auto;
+    width: 120px;
+  }
+  .loader-shimmer-rating {
+    height: 25px;
+    flex: 0 0 auto;
+    width: 70px;
+  }
+  .loader-shimmer-list {
+    height: 20px;
+    width: 190px;
+    margin-bottom: 5px;
+  }
+  .loader-shimmer-list:last-child {
+    margin-bottom: 0;
+  }
+  .loader-shimmer-info {
+    height: 20px;
+    width: 220px;
+    margin-bottom: 5px;
+  }
+  .loader-shimmer-info:last-child {
+    margin-bottom: 0;
+  }
+
+  .shimmer{
+    flex-wrap: wrap;
+    display: flex;
+
+  }
+
