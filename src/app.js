@@ -3,6 +3,11 @@ import ReactDOM from "react-dom/client";
 import "../style.css";
 import GetHeader from "./components/Header";
 import Body from "./components/Body";
+import {createBrowserRouter,RouterProvider,Outlet} from "react-router-dom"
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Error from "./components/Error";
+import RestaurentMenu from "./components/RestaurentMenu";
 
 let demo1 = React.createElement("h1", { style: { color: "green" }}, "Welcome to Namaste React !!")
 let demo = React.createElement("h1", { style: { color: "green" }}, demo1)
@@ -44,9 +49,25 @@ let HeadingJSX = function() { return  <h1 id="heading">React using headingJSX</h
 let AppLayout = () =>(
  <div className="container"> 
         <GetHeader/>
-        <Body/>
+        <Outlet/>
+        
         </div>
 )
 
+
+const appRouter= createBrowserRouter([
+  {path:"/",
+  element:  <AppLayout/>,
+  errorElement:<Error/>,
+  children:[ 
+        {path:"/",element:  <Body/>},
+        {path:"/about",element:  <About/>},
+        {path:"/contact",element:  <Contact/>},
+        {path:"/restaurentMenu/:123",element:  <RestaurentMenu/>}
+
+]},
+ ,
+  ])
+
 let root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<AppLayout/>);  
+root.render(<RouterProvider router={appRouter}/>);  

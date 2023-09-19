@@ -1,4 +1,4 @@
-export default  RestaurantData = [{
+ export default  RestaurantData = [{
     type: "restaurant",
     data: {
       type: "F",

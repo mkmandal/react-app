@@ -1,4 +1,4 @@
-import { RESTRO_CDN_LOGO } from "../../Utills/Constants";
+import {RESTRO_CDN_LOGO} from "../../Utills/Constants";
 
 let Restaurent = (props)=>{
     const restData=props.restData;
@@ -10,8 +10,8 @@ let Restaurent = (props)=>{
      name,
      costForTwoString
 
-} = restData?.data;
-    console.log(props)
+} = restData?.info;
+    
    return <div className="restauron">
     <div className="res-card">
       <h2>{props.name}</h2>
